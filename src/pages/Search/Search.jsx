@@ -9,9 +9,7 @@ const Search = () => {
   const [inputState, setInputState] = useState("");
   const navigate = useNavigate();
   let searchDataMapped = state.bookData
-    .filter((item) =>
-      item.bookName.toLowerCase().split(" ").includes(inputState)
-    )
+    .filter((item) => item.bookName.toLowerCase().includes(inputState))
     .map((item) => <BookItem {...item} key={item.id} />);
   return (
     <>
