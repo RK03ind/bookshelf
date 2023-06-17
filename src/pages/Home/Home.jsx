@@ -20,11 +20,17 @@ const Home = () => {
     <>
       <div className="home-page">
         <h2>Currently Reading 📖</h2>
-        <div className="book-list">{current}</div>
+        <div className="book-list">
+          {current.length === 0 ? <h3>No book in this list</h3> : current}
+        </div>
         <h2>Want to Read ✨</h2>
-        <div className="book-list">{want}</div>
+        <div className="book-list">
+          {want.length === 0 ? <h3>No book in this list</h3> : want}
+        </div>
         <h2>Read ✅</h2>
-        <div className="book-list">{read}</div>
+        <div className="book-list">
+          {read.length === 0 ? <h3>No book in this list</h3> : read}
+        </div>
         <div className="search-nav" onClick={() => navigate("/search")}>
           <AiOutlineSearch />
         </div>
