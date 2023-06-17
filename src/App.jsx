@@ -7,7 +7,7 @@ function App() {
     <>
       <Router>
         <header>
-          <h1>Bookshelf 📚</h1>
+          <h1 style={{ textAlign: "center" }}>Bookshelf 📚</h1>
         </header>
         <main>
           <Routes>

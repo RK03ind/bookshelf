@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { BookDataContext } from "../../context/BookDataContext";
+import useOnClickOutside from "../../hooks/useOnClickOutSide";
 
-const Menu = ({ id, readCategory }) => {
+const Menu = ({ id, readCategory, setMenuState }) => {
   const { dispatch } = useContext(BookDataContext);
+  const { ref } = useOnClickOutside(setMenuState);
   const updateCategory = (value) => {
     dispatch({
       type: "UPDATE_CATEGORY",
@@ -13,7 +15,7 @@ const Menu = ({ id, readCategory }) => {
     });
   };
   return (
-    <div className="drop-menu">
+    <div className="drop-menu" ref={ref}>
       <div>Move to....</div>
       <div onClick={() => updateCategory("current")}>
         {readCategory === "current" && "✔ "}Currently Reading

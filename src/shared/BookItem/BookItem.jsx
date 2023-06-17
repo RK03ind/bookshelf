@@ -15,7 +15,7 @@ const BookItem = ({ imageLink, bookName, authorName, readCategory, id }) => {
       >
         <AiFillCaretDown />
       </div>
-      {menuState && <Menu {...{ id, readCategory }} />}
+      {menuState && <Menu {...{ id, readCategory, setMenuState }} />}
     </div>
   );
 };
