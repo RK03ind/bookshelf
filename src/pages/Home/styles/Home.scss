@@ -2,13 +2,14 @@
   padding-bottom: 100px;
   h2 {
     text-align: center;
-    margin: 2rem 0;
+    margin: 4rem 0 1rem 0;
   }
   .book-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 6rem;
+    padding: 1rem;
   }
 
   .search-nav {
