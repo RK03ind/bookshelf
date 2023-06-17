@@ -1,0 +1,33 @@
+.book-item {
+  position: relative;
+  width: 12rem;
+  img {
+    width: inherit;
+    height: 18rem;
+  }
+  .menu-button {
+    position: absolute;
+    display: grid;
+    right: -25px;
+    bottom: 72px;
+    background-color: #00adb5;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .drop-menu {
+    position: absolute;
+    background-color: #393e46;
+    right: -158px;
+    bottom: -50px;
+    z-index: 9;
+    padding: 0.8rem;
+    & :nth-child(1) {
+      opacity: 0.75;
+    }
+  }
+}

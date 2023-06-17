@@ -1,0 +1,25 @@
+.home-page {
+  padding-bottom: 100px;
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  .search-nav {
+    display: grid;
+    position: fixed;
+    right: 18px;
+    bottom: 15px;
+    padding: 1.25rem;
+    border-radius: 50%;
+    background-color: #00adb5;
+    color: white;
+    font-size: 25px;
+  }
+}
