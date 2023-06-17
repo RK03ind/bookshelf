@@ -31,6 +31,9 @@
     }
     & :not(:first-child) {
       cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
